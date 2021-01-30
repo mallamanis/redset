@@ -250,7 +250,7 @@ class SortedSet(object):
             try:
                 res.append(self._load_item(item_str))
             except Exception:
-                log.exception("Could not deserialize '%s'" % res)
+                log.exception("Could not deserialize '%s'" % item_str)
 
         return res
 
